@@ -1,0 +1,109 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    padding: 40px 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+/* Todo container */
+#todos {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Todo item */
+#todos > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ecf0f1;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+#todos > div:hover {
+    background: #d0d7de;
+}
+
+/* Todo title */
+h4 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Button styling */
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Add Todo section */
+input[type="text"] {
+    width: 60%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+div:last-of-type {
+    margin-top: 20px;
+}
+
+div:last-of-type button {
+    background-color: #3498db;
+    margin-left: 10px;
+}
+
+div:last-of-type button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #todos > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        margin-top: 8px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
